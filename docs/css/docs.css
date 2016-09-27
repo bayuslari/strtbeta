@@ -91,12 +91,17 @@ h4 {
 }
 
 .sidebar-nav li {
-    text-indent: 20px;
     line-height: 40px;
     width: 100%;
+    border-left: 4px solid transparent;
+}
+
+.sidebar-nav li.active {
+    border-left: 4px solid #41baf1;
 }
 
 .sidebar-nav li a {
+    padding-left: 20px;
     display: block;
     text-decoration: none;
     color: #999999;
@@ -108,7 +113,7 @@ h4 {
 
 .sidebar-nav li a:hover {
     text-decoration: none;
-    color: #fff;
+    color: #41baf1;
     background: rgba(255, 255, 255, 0.2);
 }
 
@@ -146,6 +151,8 @@ h4 {
     }
     #sidebar-wrapper {
         width: 250px;
+        -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
     }
     #wrapper.toggled #sidebar-wrapper {
         width: 0;

@@ -41,12 +41,14 @@
     </nav>
     <!-- Docs Desc -->
     <div class="title-head">
-        <h1>STRT ver 1.0</h1>
-        <h2>Multipurpose Site Template</h2>
-        <p>Created 18 September 2016</p>
-        <p>Updated 18 September 2016</p>
-        <p>By SlariStudio</p>
-        <p>Support: STRT Support</p>
+        <div class="container">
+            <h1>STRT ver 1.0</h1>
+            <h2>Multipurpose Site Template</h2>
+            <p>Created 18 September 2016</p>
+            <p>Updated 18 September 2016</p>
+            <p>By SlariStudio</p>
+            <p>Support: STRT Support</p>
+        </div>
     </div>
     <!-- / Docs Desc -->
     <div id="wrapper">
@@ -63,13 +65,13 @@
                     <a href="#hero-doc">Hero</a>
                 </li>
                 <li>
-                    <a href="#">Columns and Content</a>
+                    <a href="#parallax-doc">Background Parallax</a>
                 </li>
                 <li>
-                    <a href="#">Expendable Gallery</a>
+                    <a href="#column-doc">Columns</a>
                 </li>
                 <li>
-                    <a href="#">Counter</a>
+                    <a href="#counter-doc">Counter</a>
                 </li>
                 <li>
                     <a href="#">Tabs</a>
@@ -143,15 +145,23 @@
                     <p>Above is the screenshot of the hero app layout html from <code>index-app.html</code> file. You can change the text content with adjust code below <code>.word-typing</code>.</p>
                 </div>
             </div>
-            <div class="doc-section" id="background-img-doc">
-                <h2 class="doc-section-title">2. Header and Nav menu</h2>
-                <p>All files and folders are well structured and organized</p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.lorem
+            <div class="doc-section" id="parallax-doc">
+                <h2 class="doc-section-title">4. Background Image (Parallax)</h2>
+                <p>To change the background image of parallax content like <i>Counter Section</i>, you need to find the following section on <code>main.scss</code> and change the background image.</p>
+                <img src="../docs/img/counter.png" alt="">
+                <p>If you don't want to have parallax effect on the image, you can easily remove class <code>bg-fixed</code> in the html file</p>
+                <img src="../docs/img/counterhtml.png" alt="">
             </div>
-            <div class="doc-section" id="tes">
-                <h2 class="doc-section-title">2. Header and Nav menu</h2>
-                <p>All files and folders are well structured and organized</p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.lorem
+            <div class="doc-section" id="column-doc">
+                <h2 class="doc-section-title">5. Columns</h2>
+                <p>STRT used <code>class="container"</code> from Bootstrap to wrap content and house the grid system. Therefore it has maximum width of 12 columns (1170px width on desktop screen). To make a full width column you need to change class container into <code>class="container-full"</code>.</p>
+                <img src="../docs/img/column.png" alt="">
+            </div>
+            <div class="doc-section" id="counter-doc">
+                <h2 class="doc-section-title">6. Counter</h2>
+                <p>There is counter section on STRT that has 4 item to count up. You can change <code>data-from</code> and <code>data-to</code> on <code>counter-item section</code>. </p>
+                <p><code>data-from</code> means what number that you start counting and <code>data-to</code> means what number it will stop counting</p>
+                <img src="../docs/img/counter-item.png" alt="">
             </div>
         </div>
         <!-- /#page-content-wrapper -->
