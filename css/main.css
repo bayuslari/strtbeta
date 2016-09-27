@@ -1239,7 +1239,10 @@ span.divider.center {
   height: 100vh;
 }
 
-.slideshow.item-slider, .slideshow.owl-item, .slideshow.owl-stage, .slideshow.owl-stage-outer {
+.slideshow .item-slider,
+.slideshow .owl-item,
+.slideshow .owl-stage,
+.slideshow .owl-stage-outer {
   height: 100%;
 }
 
@@ -1296,6 +1299,10 @@ span.divider.center {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
       transform: scale(1);
+}
+
+.slideshow .owl-nav > div:hover .icon-nav-slider {
+  opacity: 1;
 }
 
 .slideshow .owl-nav > div:hover .icon-nav-slider::before {
@@ -1383,6 +1390,7 @@ span.divider.center {
   width: 80%;
   height: 80%;
   cursor: pointer;
+  opacity: .2;
 }
 
 .icon-nav-slider::before {
