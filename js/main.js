@@ -633,8 +633,8 @@ var slariScript = {
     },
     preloader: function() {
         // Loading
-        var loading = '<div class="wrap-preloader"><div class="preloader loading"><span class="slice"></span><span class="slice"></span><span class="slice"></span><span class="slice"></span><span class="slice"></span><span class="slice"></span></div></div>';
-        jQuery('body').append(loading);
+        // var loading = '';
+        // jQuery('body').append(loading);
 
         // After loading finished
         jQuery(window).load(function() {
