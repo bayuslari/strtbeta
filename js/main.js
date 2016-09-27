@@ -640,7 +640,7 @@ var slariScript = {
         jQuery(window).load(function() {
             setTimeout(function() {
                 jQuery('body').addClass('loaded');
-            }, 500);
+            }, 100);
             // Set the delay animation
         });
     },
