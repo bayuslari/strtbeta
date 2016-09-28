@@ -1620,7 +1620,7 @@ span.divider.center {
   font-weight: 900;
 }
 
-.section-title p {
+.section-title .section-subtitle {
   text-transform: uppercase;
 }
 

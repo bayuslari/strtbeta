@@ -494,9 +494,9 @@ var slariScript = {
                 // Dark Border Colors
                 ".btn.btn-custom.btn-wire{border-color: " + slariScript.colorLuminance(color, -0.2) + "}" +
                 // Bright Background Colors
-                "{background-color: " + slariScript.colorLuminance(color, 0.2) + " !important} " +
+                "{background-color: " + slariScript.colorLuminance(color, 0.2) + "} " +
                 // Bright Colors
-                "{color: " + slariScript.colorLuminance(color, 0.2) + " !important} " +
+                "{color: " + slariScript.colorLuminance(color, 0.2) + "} " +
                 // Bright Border Colors
                 "{border-color: " + slariScript.colorLuminance(color, 0.2) + "}" +
                 "</style>";
@@ -523,7 +523,6 @@ var slariScript = {
                 ".timeline-wrapper:nth-of-type(odd) .timeline-box:after{border-right-color: " + bgcolor + "}" +
                 "@media (max-width: 992px){ .timeline-wrapper .timeline-box:after{border-right-color: " + bgcolor + "}" +
                 // Bright Border Colors
-
                 "</style>";
             // / Section and content color Changer
             jQuery("head").append(style);
@@ -632,10 +631,6 @@ var slariScript = {
         });
     },
     preloader: function() {
-        // Loading
-        // var loading = '';
-        // jQuery('body').append(loading);
-
         // After loading finished
         jQuery(window).load(function() {
             setTimeout(function() {
@@ -648,8 +643,9 @@ var slariScript = {
         jQuery('.grid-link').magnificPopup({
             type: 'image',
             delegate: '.img-pop',
-            // Delay in milliseconds before popup is removed
             removalDelay: 300,
+            type: "image",
+            fixedContentPos: false,
             gallery: {
                 enabled: true,
                 preload: [0, 2],
