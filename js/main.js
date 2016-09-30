@@ -555,7 +555,7 @@ var slariScript = {
             "<div class='background-toggle'>" +
             "<h5>Backgrounds</h5>" +
             "<span class='dark-bg' data-bg-color='#171717 ' data-bg-mid-color='#0d0c0d' data-color='#f5f5f5' ></span>" +
-            "<span class='light-bg' data-bg-color='#ffffff'  data-bg-mid-color='#f5f5f5' data-color='#333333'></span>" +
+            "<span class='light-bg' data-bg-color='#ffffff'  data-bg-mid-color='#f5f5f5' data-color='#2e2e2e'></span>" +
             "</div>" +
             "<div class='toggle'><i class='fa fa-cog'></i></div>" +
             "</div>";
