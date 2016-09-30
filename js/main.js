@@ -635,7 +635,7 @@ var slariScript = {
         jQuery(window).load(function() {
             setTimeout(function() {
                 jQuery('body').addClass('loaded');
-            }, 100);
+            }, 50);
             // Set the delay animation
         });
     },
